@@ -1,0 +1,8 @@
+<div class="dropdown">
+    <label>Charactor Name</label>
+  <select [ngModel]="selectedCharacter" (ngModelChange)="onSelect($event)" style="margin: 14px;">
+    <option [ngValue]="char" *ngFor="let char of characters" [selected]="char.name">{{char.name}}</option>
+    <option [ngValue]="Parul">Parul</option>
+  </select> {{error}}
+</div>
+<app-messages [char]="selectedCharacter"></app-messages>

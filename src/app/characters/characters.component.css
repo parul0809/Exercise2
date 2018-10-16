@@ -1,0 +1,8 @@
+select option:nth-child(odd) {
+    color:rgb(110, 98, 98);
+    background:rgb(252, 252, 252);
+}
+select option:nth-child(even) {
+    color:rgb(252, 252, 252);
+    background:rgb(110, 98, 98);
+}

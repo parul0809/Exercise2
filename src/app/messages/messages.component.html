@@ -1,0 +1,13 @@
+<div *ngIf="char">
+
+    <h2>Details</h2>
+ <label> Name : </label> {{char.name | uppercase}} <br/> 
+
+ <label> height : </label> {{char.height}}<br/> 
+ <label> mass : </label>{{char.mass}}<br/> 
+ <label> hair_color : </label>{{char.hair_color}}<br/> 
+ <label> Gender : </label>{{char.gender}}<br/> 
+ <label> Film : </label><ul *ngIf="filmsArray">
+     <li *ngFor="let film of filmsArray">{{film}}</li>
+ </ul>
+  </div>
